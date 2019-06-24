@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="/upload/single" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file"/>
+        <input type="submit" value="Upload"/>
+    </form>
+
+    <form action="/upload/batch" method="POST" enctype="multipart/form-data" >
+        <p>文件1：<input type="text" name="id" /></p>
+        <p>文件2：<input type="text" name="name" /></p>
+        <p>文件3：<input type="file" name="file" /></p>
+        <p><input type="submit" value="上传" /></p>
+    </form>
+</body>
+</html>
